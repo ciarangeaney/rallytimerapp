@@ -1,1 +1,238 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[Your App Name] – Support</title>
+  <meta name="description" content="Support resources for [Your App Name]. FAQs, troubleshooting, contact, and privacy policy." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #0ea5e9;
+      --border: #e5e7eb;
+    }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 { font-size: 2rem; margin: 0 0 8px; }
+    .sub { color: var(--muted); margin: 0; }
+    nav {
+      margin-top: 16px;
+      display: flex; flex-wrap: wrap; gap: 12px;
+    }
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 2px;
+    }
+    nav a:hover { border-color: var(--primary); }
+    section { padding: 24px 0; border-bottom: 1px solid var(--border); }
+    section:last-of-type { border-bottom: 0; }
+    h2 { font-size: 1.4rem; margin-top: 0; }
+    .card {
+      background: #f8fafc; border: 1px solid var(--border);
+      border-radius: 8px; padding: 16px; margin: 12px 0;
+    }
+    .grid {
+      display: grid; gap: 16px;
+    }
+    @media (min-width: 720px) {
+      .grid.cols-2 { grid-template-columns: 1fr 1fr; }
+    }
+    details { background: #f9fafb; border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin: 8px 0; }
+    summary { cursor: pointer; font-weight: 600; }
+    code, pre { background: #f3f4f6; padding: 2px 6px; border-radius: 6px; }
+    footer { color: var(--muted); font-size: 0.95rem; padding: 24px 0; }
+    .btn {
+      display: inline-block; background: var(--primary); color: white; text-decoration: none;
+      padding: 10px 14px; border-radius: 8px; margin-top: 8px;
+    }
+    .list { margin: 0; padding-left: 20px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <h1>[Your App Name] Support</h1>
+      <p class="sub">Get help, find answers, and contact us.</p>
+      <nav aria-label="Section navigation">
+        <a hrefewOverview</a>
+        <getting-startedGetting Started</a>
+        #faqFAQs</a>
+        #troubleshootingTroubleshooting</a>
+        <a hreftContact</a>
+        #privacyPrivacy</a>
+        <a href="#data-requestsests</a>
+        #changelogRelease Notes</a>
+      </nav>
+    </header>
+
+    <section id="overview" aria-labelledby="overview-title">
+      <h2 id="overview-title">Overview</h2>
+      <p><strong>[Your App Name]</strong> helps you [1–2 sentence summary of what the app does]. If you need assistance, you’ll find quick guides, FAQs, and contact options below.</p>
+
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Requirements</h3>
+          <ul class="list">
+            <li>iOS/iPadOS: <strong>[e.g., 16.0 or later]</strong></li>
+            <li>Devices: <strong>[e.g., iPhone and iPad]</strong></li>
+            <li>Network: <strong>[e.g., Wi‑Fi or cellular]</strong></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Quick Links</h3>
+          <ul class="list">
+            <li><a href="[App Store URL]" reling</a></li>
+            <li><a href="#privacyolicy</a></li>
+            <li>#contactContact Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="getting-started" aria-labelledby="gs-title">
+      <h2 id="gs-title">Getting Started</h2>
+      <ol class="list">
+        <li>Download <a href="[App Store URL]" rel]</a> from the App Store.</li>
+        <li>Open the app and follow the onboarding steps.</li>
+        <li>Grant permissions if prompted: <em>[e.g., Notifications, Location]</em>.</li>
+        <li>Sign in or create an account: <em>[if applicable]</em>.</li>
+      </ol>
+      <p><a class="btn" href="[Link to a longer user guide PDF orGuide</a></p>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Frequently Asked Questions</h2>
+
+      <!-- Optional: Add FAQPage structured data for SEO -->
+      <!-- Keep questions concise and answers actionable -->
+      <details>
+        <summary>How do I reset my password?</summary>
+        <p>Tap <strong>Profile ▸ Settings ▸ Account ▸ Reset Password</strong>. We’ll email a link to <em>your registered address</em>. If you don’t see it, check spam or try again.</p>
+      </details>
+      <details>
+        <summary>How do I enable notifications?</summary>
+        <p>Go to <strong>iOS Settings ▸ Notifications ▸ [Your App Name]</strong> and enable <em>Allow Notifications</em>. Inside the app, visit <strong>Settings ▸ Notifications</strong> to choose alerts you want.</p>
+      </details>
+      <details>
+        <summary>Does the app work offline?</summary>
+        <p>[Explain which features work offline and which require connectivity.]</p>
+      </details>
+      <details>
+        <summary>How do I delete my account or data?</summary>
+        <p>You can request deletion from <strong>Settings ▸ Privacy ▸ Delete Account</strong> or via the <aata-requestsData Request</a> form below.</p>
+      </details>
+    </section>
+
+    <section id="troubleshooting" aria-labelledby="tr-title">
+      <h2 id="tr-title">Troubleshooting</h2>
+      <div class="card">
+        <h3>Common fixes</h3>
+        <ul class="list">
+          <li>Force-quit and reopen the app.</li>
+          <li>Update to the latest version in the App Store.</li>
+          <li>Check network connectivity (Wi‑Fi or cellular).</li>
+          <li>Reinstall the app (your data: [state impact]).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Known Issues</h3>
+        <ul class="list">
+          <li>[Issue] — Workaround: [steps] — Fix planned: [version/date]</li>
+          <li>[Issue] — Workaround: [steps] — Fix planned: [version/date]</li>
+        </ul>
+      </div>
+      <p>Still stuck? Share logs or screenshots when contacting us to speed things up.</p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact Support</h2>
+      <p>Email us at <a href="upport@yourdomain.com][support@yourdomain.com]</a> or use the form below.</p>
+      <!-- If you have a backend, point the form action to your endpoint -->
+      <form action="[https://yourdomain.com/support-requestel for="name">Name<span aria-hidden="true">*</span></label><br />
+        <input id="name" name="name" type="text" required aria-required="true" />
+        <br /><br />
+        <label for="email">Email<span aria-hidden="true">*</span></label><br />
+        <input id="email" name="email" type="email" required aria-required="true" />
+        <br /><br />
+        <label for="subject">Subject</label><br />
+        <input id="subject" name="subject" type="text" />
+        <br /><br />
+        <label for="message">Describe the issue<span aria-hidden="true">*</span></label><br />
+        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+        <br /><br />
+        <label for="device">Device & iOS version</label><br />
+        <input id="device" name="device" type="text" placeholder="e.g., iPhone 14, iOS 17.5" />
+        <br /><br />
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <p class="sub">Typical response time: [e.g., 1–2 business days].</p>
+    </section>
+
+    <section id="privacy" aria-labelledby="privacy-title">
+      <h2 id="privacy-title">Privacy Policy</h2>
+      <p>Read our full policy here: <a href="[https://yourdomain.com/privacyPolicy</a></p>
+      <p>Summary:</p>
+      <ul class="list">
+        <li>Data collected: [e.g., email, usage analytics].</li>
+        <li>Purpose: [e.g., provide service, improve features].</li>
+        <li>Third parties: [e.g., Firebase Analytics].</li>
+        <li>Your rights: access, deletion, opt-out.</li>
+      </ul>
+    </section>
+
+    <section id="data-requests" aria-labelledby="dr-title">
+      <h2 id="dr-title">Data & Account Requests</h2>
+      <p>You can request to <strong>access</strong> or <strong>delete</strong> your data by emailing <a href="mailto:[privacyin.com][privacy@yourdomain.com]</a> or submitting this form.</p>
+      <form action="[https://youra-request]
+        <label for="type">Request Type</label><br />
+        <select id="type" name="type" required aria-required="true">
+          <option value="access">Access my data</option>
+          <option value="delete">Delete my data</option>
+        </select>
+        <br /><br />
+        <label for="user-id">Account Email or User ID</label><br />
+        <input id="user-id" name="user_id" type="text" required aria-required="true" />
+        <br /><br />
+        <label for="notes">Notes (optional)</label><br />
+        <textarea id="notes" name="notes" rows="4"></textarea>
+        <br /><br />
+        <button type="submit" class="btn">Submit Request</button>
+      </form>
+      <p class="sub">We’ll verify your identity and respond within [X] days.</p>
+    </section>
+
+    <section id="changelog" aria-labelledby="ch-title">
+      <h2 id="ch-title">Release Notes</h2>
+      <ul class="list">
+        <li><strong>v[1.0.0]</strong> — [Date] — Initial release.</li>
+        <li><strong>v[1.0.1]</strong> — [Date] — Bug fixes: [short notes].</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; [Year] [Your Company or Developer Name]. All rights reserved.</p>
+      <p><a href="[https://yourdomain.com/terms Service</a> • [https://yourdomain.com/privacy]Privacy Policy</a></p>
+    </footer>
+  </div>
+</body>
+</html>
